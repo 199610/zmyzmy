@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0; padding: 0; list-style-type: none; text-decoration: none; }
+body{background-color:rgba(0,0,0,0.8);font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+.banner{ height: auto; width:100%; float: left; }
+.img1{display: block; float: left;}
+.tip{ position: relative; float: left; z-index: 10;top: -80px; height:40px; width:100%; }
+.tip p{  font-size:55px;  text-align: center; color:rgba(251,251,251,1);  }
+.nav{ top:0;border:1px solid rgba(255,255,255,0.1); background-color:rgba(0,0,0,0.3); height: 70px; width:100%;  position: absolute; }
+.nav-1{ height: 70px; width:1200px; margin: 0 auto;  }
+.nav-2{ float: left; height: 70px; width:auto; }
+.logo{height: auto; width: auto; float: left;padding-top: 20px;}
+.nav-3{ float: left;}
+.nav-3 li{ text-align: center; float:left; height: 70px; width:100px; line-height: 70px; display: block;  }
+.nav-3 li a{ display: block; color:rgba(255,255,255,1);  }
+.nav-3 li a:hover{ background-color:rgba(0,0,0,0.15);  }
+.nav-3 li a:visited{background-color:rgba(0,0,0,0.15);}
+.hr{ float: right; height: 70px; width:280px; line-height: 70px;  }
+.hr img{display: block; float: right; margin-top: 25px;}
+.fen{float: right; margin-right: 10px;}
+.fen li{ float: left;  height: 70px; font-size: 14px; width:auto;}
+.fen li a{color:rgba(255,255,255,1); }
+.fen li a:hover{color: red;}
+.content{width:100%; height: auto; float: left;  }
+.content-1{ width: 1200px; height: auto; margin: 0 auto;  }
+.one{ float: left; height: auto; width:1200px; text-align: center; }
+.bt{  font-weight: bold; font-size: 30px; color:rgba(255,255,255,1);font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;  }
+.b2{ display: block; margin-top:10px; margin-bottom: 20px;  color:rgba(102,102,102,1) ;  font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; }
+.bt a{color:rgba(255,255,255,1); display: block;}
+.bt a:hover{ color:#f90;  }
+
+.one-1{float: left; height: 885px; width: 1200px; background-color:rgba(0,0,0,0.8); }
+.one-2{ float: left; height: 875px; width: 1180px;  margin:10px; }
+.t1{ margin-bottom: 10px; border-radius: 10px;background-color:rgba(251,251,251,0.1);  float: left; height: auto; width:585px; margin-right:5px;}
+.tu{display: block; border-radius: 10px;}
+.hb{ float: right; font-size: 12px;color:rgba(251,251,251,0.5); }
+.t1 li{ display:block;height: auto; width:585px; float: left;}
+.dm{ margin-top: 10px; display:block;  font-size:20px; font-weight:bold;float:left; }
+.dm a{color: #b7b7b7;}
+.dm a:hover{ color: #f90; }
+#er{height: 30px; float: left; background-color:rgba(251,251,251,0.9);}
+.t2{ border-radius: 10px; background-color:rgba(251,251,251,0.1);float: right; height: auto; width:585px; }
+.t2 li{ margin-bottom:5px;display:block;height:auto; width:585px; float: left;}
+.right{margin-top: 10px;float: right; width: 200px; height:auto; }
+.zan { border-radius: 5px; float: left;width:200px; height: 35px; background-color:rgba(251,251,251,0.1); }
+.zan li{   line-height:35px;width:100px; height: 35px;   }
+.zan li a{ font-size: 13px; display:block;color: rgba(251,251,251,1);  display: block;}
+.zan li a:hover{ color: red; }
+.dw{ font-weight: bold; color:rgba(255,255,255,1); position:relative; top: -150px; width: 195px; height:auto; }
+
+.bot{float: left; height: auto; width:auto;}
+.yc{ background-color: rgba(0,0,0,0.2);margin-top: 235px; height:150px;visibility:hidden;width: 585px; position:absolute; transition: all 0.2s; }
+.we li{float: left;margin-bottom: 10px; font-weight: bold; height:auto;   width:585px; }
+
+.we li a{ float: left; font-weight:bold; color: rgba(251,251,251,1);}
+.we li a:hover{color:#f90; }
+.t1:hover .yc{ transform:translate3d(0,-10px,0);visibility: visible;}
+.fj{ float: left;width:70px;height: auto;}
+.fj li a{font-weight:bold; font-size: 12px; display: block; color: rgba(251,251,251,1);  }
+.fj li{border-radius:10px;width:65px; height: 20px; line-height: 20px; margin-top:15px;  border: 1px solid rgba(251,251,251,1);}
+.fj li a:hover{border-radius:10px; background-color:#f90; color: rgba(251,251,251,1);  }
+.bom{ float: left; margin-top:25px;border-top:1px solid rgba(251,251,251,1);width: 585px; height: auto;}
+.bom p{font-weight:bold; padding-top: 5px;font-size: 12px; color: rgba(251,251,251,0.8);float: left; }
+
+
+.t2:hover .yc{ transform:translate3d(0,-10px,0); visibility: visible;}
+
+.k{ float: left; width:50px; ;height:30px;line-height: 25px; cursor: pointer;}
+
+
+
+
+
+
+
+
+
+
+  
+
+footer{ background-color: #222430; margin-top:10px; float: left; width: 100%;height: auto;  }
+.foot{ margin:0 auto; height: auto; width: 1200px; background-color: red;  } 
+.zuo{ padding-top: 50px; float: left; height: 125px; width: 675px;  }
+.fl{margin-right: 80px;height: 125px; width: 56px; float: left; }
+.m{ font-size: 14px; height: 25px; width: 56px; float: left; margin-right: 80px;  }
+.m a{ color: #666; }
+.m a:hover{ color: #f90; }
+.m{font-size: 14px;}
+.b{color:#999;font-size: 14px; height: 25px; width: 56px; float: left;   }
+.fr{ padding-top: 50px;  float: right; height: 175px; width: 200px; }
+.gz{ color: #666;float: left;  font-size: 14px; width: 200px; text-align: center;  }
+.fr img{ margin-left: 60px; margin-top: 10px; }
+.t-y span{ line-height:180px; text-align:center;float: left; margin-left: 150px; margin-top: 80px;}
+.t-y span a{ font-weight:bold;font-size: 20px; color:rgba(251,251,251,1);border:5px solid rgba(251,251,251,0.5);border-radius: 180px; height: 180px; width: 180px;}
+.t-y span a:hover{ background-color:  #f90; }
+.s{ float: left; height:180px; width:1200px;}
+.zi{ font-size: 18px; font-weight: bold; padding-top: 20px;   text-align: center; color: #676b6e; }
+.ipt{ margin:0 auto; height: auto; width: auto; }
+.nu{ width:600px;  margin-left: 430px; margin-top: 20px; }
+.an{ color:#676b6e;  width: 300px; height: 30px; border: none; font-size: 12px; background-color:  #c7c7c9; }
+.nu img{ display: block;float: left;  }
+.rs{   height:30px;width:300px;  margin-left: 430px;margin-top: 5px;}
+.re{ height:30px; padding-top:2px;float: left; line-height: 30px;font-size: 12px; color: #676b6e;  }
+.bs{ height:30px;float: left;line-height:30px;  margin-left: 10px;   }
+.bs a{ font-size: 12px; color: #676b6e;}
+.bs a:hover{color:#f90;}
