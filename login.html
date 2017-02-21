@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" >
+<script src="jquery/jquery.min.js"></script>
+<script src="js/js.cookie-2.1.0.min.js"></script>
+
+
+</head>
+<style type="text/css">
+*{ margin:0; padding:0;  list-style-type:none;  }
+body{ background:url(images/in1.png) no-repeat; }
+.a1{ background-color:rgba(0,0,0,0.1);height: 70px;}
+.a2{margin-top:80px;background-color:rgba(153,153,153,0.2); border:2px solid rgba(0,0,0,0.5);height:400px; float: left; width:100%;}
+#q{ color: red;font-size:14px; display: none;float:left;margin-top:15px;margin-left: 15px; }
+#q1{color: red;font-size:14px; display: none;float:left;margin-top:15px;margin-left: 15px; }
+</style>
+<body>
+
+<div class="container">
+  <div class="row">
+   <div class="col-md-6 col-md-offset-3" id="form">
+    <div class="a2 ">
+     <div class="a1"><p class="text-center">用户登录</p></div>
+   	 <div class="form-group">
+   	  <label >用户名</label>
+   	  <input type="text" id="account" class="form-control"  >
+      <span id="q">请输入用户!</span>
+   	 </div>
+   	 <div class="form-group">
+   	 <label>密　码</label>
+   	 <input id="password" type="password"  class="form-control"><span id="q1">请输入密码!</span>
+   	 </div>
+     
+      <button id="login" class="btn btn-success col-md-3 col-md-offset-4">登录</button>
+    </div>
+  </div>
+ </div>
+</div>
+
+
+</body>
+<script src="login.js"></script>
+<script src="layer/layer.js"></script>
+<script type="text/javascript">
+
+ $(function(){
+   $('#account').on('click',function(){
+    console.log(this);
+    if (''==$('#account').val()){
+      q.style.display='none';
+                                }
+       // layer.msg('请填写账号');
+                                     });
+
+   $('#account').on('blur',function(){
+    console.log(this);
+   if (''==$('#account').val()){
+    q.style.display='block';
+                               }
+       // layer.msg('请填写账号');
+                                     });
+   $('#password').on('click',function(){
+     if (''==$('#password').val()){
+     console.log(this);
+      q1.style.display='none';
+                                   }
+    //console.log(this);
+       // layer.msg('请填写密码');
+     });
+   $('#password').on('blur',function(){
+     console.log(this);
+      if (''==$('#password').val()){
+     q1.style.display='block';}
+    });
+   
+     
+    })
+
+ function buttonStatus(){
+ var input=$('#form input')
+ var flag=1
+ for(var i=0;i<input.length;i++){
+  if(!input[i].value){
+   flag=0
+                      }
+                                }
+if (flag==1) {
+  $('#login').attr('disabled',false)}
+  else{
+    $('#login').attr('disabled',true)}
+             }
+$(function(){
+  $('#form input').on('blur',function(){
+    buttonStatus()
+  })
+  $('#form input').on('keyup',function(){
+
+    buttonStatus()
+  })
+
+})
+
+
+
+
+  </script>
+
+</html>

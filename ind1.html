@@ -1,0 +1,178 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>旅游网站</title>
+<link rel="stylesheet" type="text/css" href="bootstrap/css/inde1.css" >
+<script src="jquery/jquery.min.js"></script>
+
+
+<script src="js/arg-1.3.js"></script>
+</head>
+
+<body>
+<section class="banner">
+ <div class="ban-1">
+ <img class="img1" src="images/2.jpg" width="1920" height="500">
+ </div>
+</section>
+
+<section class="tip">
+<p>每个人心中，都会有一个古镇情怀，流水江南，烟笼人家</p>
+</section>
+
+<section class="nav">
+ <div class="nav-1">
+
+  <div class="nav-2">
+   <div class="logo"><img src="images/3.png"></div>
+    <ul class="nav-3">
+   	<li><a href="#">首页</a></li>
+   	<li><a href="#">目的地</a></li>
+   	<li><a href="#">首页</a></li>
+   	<li><a href="#">首页</a></li>
+   	<li><a href="#">首页</a></li>
+   </ul>
+  </div>
+  <div class="hr">
+   	<a href="#"><img src="images/2.png"></a>
+   	<ul class="fen">
+   	 <li><a href="#">登录</a></li>
+   	 <li><a>|</a></li>
+   	 <li><a href="#">注册</a></li>
+    </ul>
+   </div>
+
+ </div>
+</section>
+
+<section class="contenter">
+ <div class="content"> 
+  <div class="first">
+   <div class="left">
+    <img id="hl" src="" width="600" height="500">
+   </div>
+   <div class="right">
+     <p id="jh0" class="nr"></p>
+     <p id="jh1" class="n1"></p>
+     <p id="jh2" class="n1"> </p>
+     <p  id="jh3" class="n1"></p>
+     <p  id="jh4" class="n1"></p>
+     <p id="jh5" class="n1"></p>
+     <p id="jh6" class="n1"></p>
+   </div>
+ </div>
+
+
+
+ </div>
+</section>
+
+
+
+
+
+
+ 
+
+<footer>
+ <div class="foot">
+  <div class="zuo">
+
+
+   <ul class="fl">
+    <li class="b" ><a >关于我们</a></li>
+    <li class="m"><a href="">招贤纳士</a></li>
+    <li class="m"><a href="">网站荣誉</a></li>
+    <li class="m"><a href="">联系我们</a></li>
+    <li class="m"><a href="">公司简介</a></li>
+   </ul>
+
+
+   <ul class="fl">
+    <li class="b" ><a >商家服务</a></li>
+    <li class="m"><a href="">招贤纳士</a></li>
+    <li class="m"><a href="">网站荣誉</a></li>
+    <li class="m"><a href="">联系我们</a></li>
+    <li class="m"><a href="">公司简介</a></li>
+   </ul>
+
+   <ul class="fl">
+    <li class="b" ><a >新手上路</a></li>
+    <li class="m"><a href="">招贤纳士</a></li>
+    <li class="m"><a href="">网站荣誉</a></li>
+    <li class="m"><a href="">联系我们</a></li>
+    <li class="m"><a href="">公司简介</a></li>
+   </ul>
+
+   <ul class="fl">
+    <li class="b" ><a>合作伙伴</a></li>
+    <li class="m"><a href="">招贤纳士</a></li>
+    <li class="m"><a href="">网站荣誉</a></li>
+    <li class="m"><a href="">联系我们</a></li>
+    <li class="m"><a href="">公司简介</a></li>
+   </ul>
+
+
+  </div>
+
+
+
+  <div class="fr">
+   <span class="gz">关注我们</span>
+   <img src="images/er.png" width="80px" height="80px">
+  </div>
+ </div>
+
+
+
+
+
+</footer>
+ 
+</body>
+
+
+<script type="text/javascript">
+$(function(){
+$.ajax({
+   url:'wad/'+Arg('id'),
+   method:'get',
+   dataType:'json',
+   success:function(data,status,xhr){
+    console.log(data);
+  
+     $('#jh0').text(data[0].name);
+     $('#jh1').text(data[0].alias);
+     $('#jh2').text(data[0].taste);
+     $('#jh3').text(data[0].area);
+     $('#jh4').text(data[0].history);
+     $('#jh5').text(data[0].propose);
+     $('#jh6').text(data[0].intro);
+     $('#hl').attr('src',data[0].pic_1);
+     
+                                    },
+
+ })
+
+$.ajax({
+   url:'log/browse/wad/'+Arg('id'),
+   method:'get',
+   success:function(data,status,xhr){
+
+                                    },
+    error:function(xhr,status,error){
+
+                                     }
+
+
+
+})
+
+
+
+
+
+ })   
+</script>
+</html>

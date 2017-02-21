@@ -1,0 +1,360 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>旅游网站</title>
+<link rel="stylesheet" type="text/css" href="bootstrap/css/xiuxian.css" >
+<script src="jquery/jquery.min.js"></script>
+
+<script src="js/js.cookie-2.1.0.min.js"></script>
+<script src="js/arg-1.3.js"></script>
+<script src="js/handlebars-v4.0.5.js"></script>
+</head>
+
+<body>
+<section class="banner">
+ <div class="ban-1">
+ <img class="img1" src="images/sd.jpg" width="1920" height="400">
+ </div>
+</section>
+<section class="tip">
+<p>休闲避暑胜地</p>
+</section>
+<section class="nav" >
+ <div class="nav-1">
+
+  <div class="nav-2">
+   <div class="logo"><img src="images/3.png"></div>
+   <ul class="nav-3">
+   	<li><a href="#">首页</a></li>
+   	<li><a href="#">目的地</a></li>
+   	<li><a href="#">首页</a></li>
+   	<li><a href="#">首页</a></li>
+   	<li><a href="#">首页</a></li>
+   </ul>
+  </div>
+  <div class="hr">
+   	<a href="#"><img src="images/2.png"></a>
+   	<ul class="fen">
+   	 <li><a href="login.html" id="dl">登录</a></li>
+   	 <li><a>|</a></li>
+   	 <li><a href="#">注册</a></li>
+
+   	</ul>
+   </div>
+
+ </div>
+</section>
+
+
+<section class="content">
+ <div class="content-1">
+
+
+  <div class="s">
+    <p class="zi">一个人的旅行，在路上遇见最真实的自己
+     <br>
+     快来找寻最真实的自己吧！
+    </p>
+
+    <div class="ipt">
+     <p class="nu"><button class="k" id="but">搜索</button><input type="text" value="搜索目的地" class="an" id="put">
+     <select id="er">
+      <option value="1">美食</option>
+      <option value="2">景点</option> 
+      </select>
+     </p>
+
+     <ul class="rs">
+     <li class="re"><a>热搜:</a></li>
+     <li class="bs"><a href="#">美食多的城市</a></li>
+     <li class="bs"><a href="#">城市</a></li>
+     <li class="bs"><a href="#">城市</a></li>
+     
+       
+
+
+     </ul>
+    </div>
+     
+ </div>
+
+
+
+ <div class="one">
+ 
+  
+
+  <div class="one-1">
+   <div class="one-2" id="list">
+    
+   <!--  <div class="top">
+     <ul class="t1">
+     <li><a  href="#" id="l0"><img id="t0" class="tu" src="" width="585" height="376" ></a>
+     <p class="dm" ><a href="#" id="z0"></a></p>
+     <div class="right">
+       <ul class="zan">
+        <li><a href="#">赞：12000</a></li>
+        <li><a href="#">评论：5200</a></li>
+       </ul>
+     </div>
+      
+     </li>
+
+     <div class="yc">
+     	<ul class="we">
+     	 <li><a href="#">河北北戴河</a><p class="hb">河北</p></li></ul>
+       <ul class="fj"><li><a href="#">风景区</a></li></ul>
+       <div class="bom"><p>河北北戴河河北北戴河河北北戴河河北北戴河河北北戴河河北北戴河河北北戴河</p></div>
+     	
+     </div>
+
+     </ul> 
+   
+
+
+
+    <ul class="t2">
+     <li><a  href="#" id="l1"><img id="t1" class="tu" src="" width="585" height="376" ></a>
+     <p class="dm" ><a href="#" id="z1"></a></p>
+     <div class="right">
+       <ul class="zan">
+        <li><a href="#">赞：12000</a></li>
+        <li><a href="#">评论：5200</a></li>
+       </ul>
+     </div>
+     
+     </li>
+
+     <div class="yc">
+      <ul class="we">
+       <li><a href="#">江西庐山</a><p class="hb">江西</p></li></ul>
+       <ul class="fj"><li><a href="#">风景区</a></li></ul>
+       <div class="bom"><p>河北北戴河河北北戴河河北北戴河河北北戴河河北北戴河河北北戴河河北北戴河</p></div>
+      
+     </div>
+
+     </ul> 
+
+</div> -->
+
+<!-- <div class="bot">
+     <ul class="t1">
+     <li><a  href="#" id="l2"><img id="t2" class="tu" src="" width="585" height="376" ></a>
+     <p class="dm" ><a id="z2" href="#"></a></p>
+     <div class="right">
+       <ul class="zan">
+        <li><a href="#">赞：12000</a></li>
+        <li><a href="#">评论：5200</a></li>
+       </ul>
+     </div>
+     
+     </li>
+
+     <div class="yc">
+      <ul class="we">
+       <li><a href="#">鸡公山</a><p class="hb">河南</p></li></ul>
+       <ul class="fj"><li><a href="#">风景区</a></li></ul>
+       <div class="bom"><p>河北北戴河河北北戴河河北北戴河河北北戴河河北北戴河河北北戴河河北北戴河</p></div>
+      
+     </div>
+
+     </ul> 
+
+     <ul class="t2">
+     <li><a  href="#" id="l3"><img id="t3" class="tu" src="" width="585" height="376" ></a>
+     <p class="dm" ><a id="z3" href="#"></a></p>
+     <div class="right">
+       <ul class="zan">
+        <li><a href="#">赞：12000</a></li>
+        <li><a href="#">评论：5200</a></li>
+       </ul>
+     </div>
+      
+     </li>
+
+     <div class="yc">
+      <ul class="we">
+       <li><a href="#">莫干山</a><p class="hb">浙江</p></li></ul>
+       <ul class="fj"><li><a href="#">风景区</a></li></ul>
+       <div class="bom"><p>河北北戴河河北北戴河河北北戴河河北北戴河河北北戴河河北北戴河河北北戴河</p></div>
+      
+     </div>
+
+     </ul> 
+
+   </div>
+ -->
+
+   </div>
+  </div>
+ </div>	
+
+
+ </div>
+</section>
+
+
+
+<footer>
+ <div class="foot">
+  <div class="zuo">
+
+
+   <ul class="fl">
+    <li class="b" ><a >关于我们</a></li>
+    <li class="m"><a href="">招贤纳士</a></li>
+    <li class="m"><a href="">网站荣誉</a></li>
+    <li class="m"><a href="">联系我们</a></li>
+    <li class="m"><a href="">公司简介</a></li>
+   </ul>
+
+
+   <ul class="fl">
+    <li class="b" ><a >商家服务</a></li>
+    <li class="m"><a href="">招贤纳士</a></li>
+    <li class="m"><a href="">网站荣誉</a></li>
+    <li class="m"><a href="">联系我们</a></li>
+    <li class="m"><a href="">公司简介</a></li>
+   </ul>
+
+   <ul class="fl">
+    <li class="b" ><a >新手上路</a></li>
+    <li class="m"><a href="">招贤纳士</a></li>
+    <li class="m"><a href="">网站荣誉</a></li>
+    <li class="m"><a href="">联系我们</a></li>
+    <li class="m"><a href="">公司简介</a></li>
+   </ul>
+
+   <ul class="fl">
+    <li class="b" ><a >合作伙伴</a></li>
+    <li class="m"><a href="">招贤纳士</a></li>
+    <li class="m"><a href="">网站荣誉</a></li>
+    <li class="m"><a href="">联系我们</a></li>
+    <li class="m"><a href="">公司简介</a></li>
+   </ul>
+
+
+  </div>
+
+
+
+  <div class="fr">
+   <span class="gz">关注我们</span>
+   <img src="images/er.png" width="80px" height="80px">
+  </div>
+ </div>
+
+
+
+
+
+</footer>
+ 
+</body>
+<script type="text/javascript">
+  if (Cookies.get('user')) {
+  document.getElementById('dl').innerHTML='欢迎您:'+Cookies.get('user');
+}
+</script>
+
+
+<script id="out" type="text/x-handlebars-template">
+{{#each wad}}  
+
+ 
+     <ul class="t1">
+     <li><a  href="hebei.html?id={{id}}"><img src="{{pic_1}}" width="585" height="376" /></a>
+     <p class="dm" ><a href="hebei.html?id={{id}}">{{name}}</a></p>
+     <div class="right">
+       <ul class="zan">
+        <li><a href="#">赞：12000</a></li>
+        <li><a href="#">评论：5200</a></li>
+       </ul>
+     </div>
+      
+     </li>
+
+     <div class="yc">
+      <ul class="we">
+       <li><a href="#">{{name}}</a><p class="hb">{{location}}</p></li></ul>
+       <ul class="fj"><li><a href="#">风景区</a></li></ul>
+       <div class="bom"><p>河北北戴河河北北戴河河北北戴河河北北戴河河北北戴河河北北戴河河北北戴河</p></div>
+      
+     </div>
+
+     </ul> 
+
+
+{{/each}}
+</script>
+
+
+
+
+
+<script type="text/javascript">
+$(function(){
+  $('#but').on('click',function(){
+   $.ajax({
+    url:'wad/search/counter',
+    method:'post',
+    dataType:'json',
+    data:{search:$('#put').val()},
+    success:function(data){
+     if (data.counter==1) {
+     window.location.href='ind1.html?id='+data.id
+                          }
+    else if(data.counter>1){
+     window.location.href='sou.html?search='+$('#put').val()
+  
+                           }
+    else{alert}
+                          }
+    
+        });
+                          });
+
+
+ $.ajax({
+
+  url:'scenery/category/'+Arg('id'),
+  method:'get',
+  datatype:'json',
+  success:function(data,status,xhr){
+  
+  var source=$('#out').html();
+  var template=Handlebars.compile(source);
+  var da={'wad':data};
+  $('#list').html(template(da));
+                                   },
+
+  error:function(xhr,status,error){
+   console.log(error);
+                                 }
+    })
+ 
+ //  var _id=Arg('id')
+ //     , _type=Arg('type')
+ //  if (_type =='category'){
+ // $.ajax({
+ //  url:'scenery/category/'+_id,
+ //  type:'get',
+ //  dataType:'json',
+ //  success:function(data,status,xhr){
+ //    console.log(data);
+ //    for(i=0;i<data.length;i++){
+ //      $('#z'+i).text(data[i].name);
+ //      $('#t'+i).attr('src',data[i].pic_1);
+ //     $('#z'+i).attr('href','hebei.html?id='+data[i].id);
+ //     $('#l'+i).attr('href','hebei.html?id='+data[i].id);
+ //                              }
+ //                                   },
+ //        });
+ //                     }
+     
+         });
+
+</script>
+
+</html>
